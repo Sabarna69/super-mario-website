@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #98000c;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.canva-red-canvas {
+  background-color: #c80010;
+  background-image: radial-gradient(
+    ellipse at 50% 48%,
+    #e60012 0%,
+    #cf0010 52%,
+    #98000c 100%
+  );
+}
+
+.font-arcade {
+  font-family: 'Orbitron', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.download-pill-btn {
+  background-color: #e60012;
+  border: 2.5px solid #ffffff;
+  box-shadow: 1.5px 3.5px 5px rgba(45, 0, 5, 0.58);
+  transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 140ms ease;
+}
+
+.download-pill-btn:hover {
+  background-color: #f40014;
+  transform: scale(1.03);
+}
+
+.download-pill-btn:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .download-pill-btn {
+    transition: background-color 140ms ease;
+  }
+
+  .download-pill-btn:hover,
+  .download-pill-btn:active {
+    transform: none;
+  }
+}

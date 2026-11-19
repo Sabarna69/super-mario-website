@@ -1,0 +1,6 @@
+{
+  "name": "Super Mario All-Stars – Android Game Download",
+  "description": "Download Super Mario All-Stars for Android. Explore classic retro gaming, enjoy offline gameplay, and experience nostalgic adventures on your phone.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
